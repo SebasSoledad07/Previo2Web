@@ -20,9 +20,16 @@ public class Movimientos {
 	public String descripcion;
 	
 	public Movimientos(Integer serial, Date fecha_mov, Integer valor, Integer tipo, String descripcion) {
-		super();
+		
 		this.serial = serial;
 		this.fecha_mov = fecha_mov;
+		this.valor = valor;
+		this.tipo = tipo;
+		this.descripcion = descripcion;
+	}
+
+	public Movimientos(Integer valor, Integer tipo, String descripcion) {
+		
 		this.valor = valor;
 		this.tipo = tipo;
 		this.descripcion = descripcion;

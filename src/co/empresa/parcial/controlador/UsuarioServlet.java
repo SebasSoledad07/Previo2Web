@@ -93,7 +93,7 @@ public class UsuarioServlet extends HttpServlet {
 	
 	private void showNewForm(HttpServletRequest request,HttpServletResponse response) 
 			throws ServletException,IOException{
-		RequestDispatcher dispatcher = request.getRequestDispatcher("usuario.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("usuario.html");
 		dispatcher.forward(request, response);
 		
 	}
@@ -116,7 +116,7 @@ public class UsuarioServlet extends HttpServlet {
 		int id = Integer.parseInt(request.getParameter("id"));
 		Usuario usuarioActual = userDao.select(id);
 		request.setAttribute("usuario", usuarioActual);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("usuario.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("usuario.html");
 		dispatcher.forward(request, response);
 	}
 
