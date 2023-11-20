@@ -7,13 +7,15 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Usuario implements Serializable {
-
-	public Integer id;
-	public String user;
-	public String password;
-	public String email;
+public class Movimientos {
 	
+	public Integer id;
+	public Integer serial;
+	public Integer user_id;
+	public String movimiento;
+	public int valor; 
+	public int tipo;
+	public String descripcion;
 	
 	
 }
